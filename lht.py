@@ -91,8 +91,11 @@ class ConnectionNetwork(nn.Module):
         # Reshape to [batch, seq_len, d_model, k, k]
         A = A_flat.view(batch, seq_len, d_model, self.k, self.k)
         
-        # Optional: Project to so(k) for orthogonal structure (antisymmetric)
-        # A = 0.5 * (A - A.transpose(-1, -2))
+        # STABILITY FIX: Constrain to small values
+        A = 0.1 * torch.tanh(A)
+        
+        # Project to so(k) for orthogonal structure (antisymmetric) - more stable
+        A = 0.5 * (A - A.transpose(-1, -2))
         
         return A
 

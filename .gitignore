@@ -7,3 +7,5 @@ data/
 *.bin
 *.safetensors
 .DS_Store
+*.pt
+lht/lht_weights.pt

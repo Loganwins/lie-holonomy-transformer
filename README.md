@@ -162,7 +162,7 @@ Based on *"Beyond Holonomy: Lie-Algebraic Symbol Emergence and the Homotopy Type
 
 ## License
 
-MIT — Do what thou wilt.
+ Apache 2.0
 
 ---
 

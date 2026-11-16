@@ -16,7 +16,7 @@ library_name: transformers
 pipeline_tag: text-generation
 ---
 
-# Übermenschetien Heaven Engine + Lie-Holonomy Transformer
+# Lie-Holonomy Transformer Lab
 
 An experimental PyTorch scaffold that combines a local language model, LoRA fine-tuning, and geometric consistency measurements inspired by Lie algebras, gauge theory, and holonomy.
 
@@ -48,8 +48,8 @@ The implementation adds holonomy, curvature, and waypoint objectives alongside m
 ## Installation
 
 ```bash
-git clone https://github.com/Loganwins/ubermenschetien-lht.git
-cd ubermenschetien-lht
+git clone https://github.com/Loganwins/lie-holonomy-transformer.git
+cd lie-holonomy-transformer
 
 python -m venv .venv
 source .venv/bin/activate
